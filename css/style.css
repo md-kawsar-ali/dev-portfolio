@@ -4,30 +4,45 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.hero {
-  background-image: url('../images/top-banner.png');
-  background-repeat: no-repeat;
-  background-position: top left;
-  padding: 100px 0;
-}
-
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .col {
-  width: 50%;
+  width: 45%;
 }
 
 .col img {
   width: 100%;
+}
+
+.primary-btn {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 34px;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, orange, tomato);
+  display: inline-block;
+}
+
+/*========================================
+                Hero Section
+==========================================*/
+.hero {
+  background-image: url('../images/top-banner.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 100px 0;
 }
 
 .hero h1 {
@@ -55,14 +70,110 @@ body {
   margin-bottom: 25px;
 }
 
-.primary-btn {
-  color: #ffffff;
-  font-size: 16px;
+/*========================================
+                About Section
+==========================================*/
+.about {
+  background-image: url(../images/dream-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.about h2 {
+  color: #232323;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0px;
+}
+
+.about h3 {
+  font-size: 30px;
   font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 8px 34px;
-  border-radius: 5px;
-  background-image: linear-gradient(90deg, orange, tomato);
-  display: inline-block;
+  margin: 0;
+}
+
+.about p {
+  color: #353535;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/*========================================
+            Experience Section
+==========================================*/
+.experience {
+  padding: 100px 0;
+  background-image: url(../images/exp-bg.png);
+  background-repeat: no-repeat;
+  background-position: left 62%;
+}
+
+.experience h2 {
+  color: #232323;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 50px;
+}
+
+.experience .col {
+  width: 48%;
+}
+
+.card {
+  min-height: 250px;
+  padding: 40px 50px;
+  background: #ffffff;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  color: #232323;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.card h4 {
+  color: orange;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.card p {
+  color: #353535;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.orange-border {
+  border-left: 8px solid;
+  border-image: linear-gradient(180deg, orange, tomato);
+  border-image-slice: 1;
+}
+
+.blue-border {
+  border-left: 8px solid;
+  border-image: linear-gradient(180deg, rgb(88, 133, 255), rgb(202, 91, 253));
+  border-image-slice: 1;
+}
+
+/*========================================
+            Footer Section
+==========================================*/
+footer {
+  padding: 0 0 30px;
+}
+footer p {
+  color: #353535;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 0;
 }
